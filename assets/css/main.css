@@ -1298,8 +1298,8 @@ input, select, textarea {
 			border-radius: 100%; */
 			
 			
-			width: 190px; /* Ustaw szerokość okręgu */
-			height: 190px; /* Ustaw wysokość okręgu */
+			width: 13vw; /* Użycie procentu szerokości ekranu */
+    		height: 13vw; /* Użycie proporcjonalnej wysokości */
 			line-height: 5.5rem;
 			border-radius: 100%; /* Okrągły kształt */
 			border: solid 2px #ffffff;
@@ -1312,6 +1312,7 @@ input, select, textarea {
 		#header .profile-picture {
 			width: 100%; /* Dopasuj obraz do okręgu */
 			height: auto; /* Zachowaj proporcje */
+			object-fit: cover;
 		}
 
 			#header .logo .icon:before {
@@ -1476,6 +1477,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 480px) {
+			#header .logo {
+				width: 100px; /* Zmniejszamy jeszcze bardziej */
+				height: 100px; /* Ustawiamy proporcjonalnie wysokość */
+			}
 
 			#header {
 				padding: 1.5rem 0;
