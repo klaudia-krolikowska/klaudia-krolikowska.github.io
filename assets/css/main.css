@@ -684,6 +684,41 @@ input, select, textarea {
 			top: 0.25em;
 		}
 
+		.gallery-container {
+			position: relative;
+			align-items: center;
+			display: block;
+			margin: 2.5rem auto; /* Center the image and apply margin to the top and bottom */
+			width: 90%; /* Set a smaller width, you can adjust this value */
+		}
+		
+		.gallery-image {
+			width: 100%;
+			border-radius: 6px;
+		}
+		
+		.gallery-btn {
+			position: absolute;
+			top: 30px;
+			transform: translateY(-50%);
+			font-size: 32px;
+			background: rgba(211, 211, 211, 0.4);
+			border: none;
+			color: white;
+		}
+		
+		.gallery-btn:hover {
+			background: rgba(211, 211, 211, 0.55);
+		}
+		
+		#prevBtn {
+			left: 10px;
+		}
+		
+		#nextBtn {
+			right: 10px;
+		}
+
 		.image.fit {
 			display: block;
 			margin: 0 0 2rem 0;

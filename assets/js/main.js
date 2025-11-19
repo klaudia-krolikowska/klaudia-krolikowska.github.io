@@ -4,6 +4,41 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+// Lista zdjęć z folderu
+const images = [
+	"images/work1.jpg",
+    "images/work/1.jpg",
+    "images/work/2.jpg",
+	"images/work/3.jpg",
+	"images/work/4.jpg",
+	"images/work/5.jpg",
+	"images/work/6.jpg",
+	"images/work/7.jpg",
+	"images/work/8.jpg",
+	"images/work/9.jpg",
+	"images/work/10.jpg",
+	"images/work/11.jpg",
+	"images/work/12.jpg",
+	"images/work/13.jpg",
+	"images/work/14.jpg",
+	"images/work/15.jpg",
+	"images/work/16.jpg"
+];
+
+let index = 0;
+const imgElement = document.getElementById("galleryImage");
+
+document.getElementById("nextBtn").addEventListener("click", () => {
+    index = (index + 1) % images.length;
+    imgElement.src = images[index];
+});
+
+document.getElementById("prevBtn").addEventListener("click", () => {
+    index = (index - 1 + images.length) % images.length;
+    imgElement.src = images[index];
+});
+
+
 (function($) {
 
 	var	$window = $(window),
