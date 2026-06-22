@@ -22,7 +22,10 @@ const images = [
 	"images/work/13.jpg",
 	"images/work/14.jpg",
 	"images/work/15.jpg",
-	"images/work/16.jpg"
+	"images/work/16.jpg",
+	"images/work/17.jpg",
+	"images/work/18.jpg",
+	"images/work/19.jpg"
 ];
 
 let index = 0;
